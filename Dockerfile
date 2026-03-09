@@ -2,7 +2,7 @@
 FROM debian:stable-slim AS build
 
 RUN apt-get update && apt-get install -y \
-    curl git unzip xz-utils zip libglu1-mesa ca-certificates nginx \
+    curl git unzip xz-utils zip libglu1-mesa ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 ENV FLUTTER_HOME=/opt/flutter
